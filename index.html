@@ -18,6 +18,8 @@
     <!-- Fontawesome CSS -->
     <link rel="stylesheet" href="fontawesome-free/css/all.min.css" />
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>A.N.JELL</title>
   </head>
   <body id="beranda">
@@ -71,8 +73,8 @@
         width="200"
         class="rounded-circle img-thumbnail"
       />
-      <h1 class="display-4">Dirga Febriyanda</h1>
-      <p class="lead">Writer | Programer | Graphic Design</p>
+      <h1 class="display-4"></h1>
+      <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -92,7 +94,7 @@
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-right">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
               error, dignissimos reprehenderit voluptas recusandae suscipit,
@@ -100,7 +102,7 @@
               Similique?
             </p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-left">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Distinctio iusto sapiente porro ab, rerum modi illo ut eaque
@@ -128,9 +130,9 @@
             <h2>Project</h2>
           </div>
         </div>
-        <div class="row">
+        <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-in-down">
               <img
                 src="img/project/writer.jpg"
                 class="card-img-top"
@@ -142,7 +144,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-in-down" data-aos-delay="100">
               <img
                 src="img/project/programer.jpg"
                 class="card-img-top"
@@ -154,7 +156,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-in-down" data-aos-delay="200">
               <img
                 src="img/project/design.jpg"
                 class="card-img-top"
@@ -176,6 +178,92 @@
       </svg>
     </section>
     <!-- Akhir project -->
+
+    <!-- Galeri -->
+    <section id="galeri">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Galeri</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="img/gambar/1.jpg"
+                alt="Gambar 1"
+                class="img-fluid galeri-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="img/gambar/2.jpg"
+                alt="Gambar 2"
+                class="img-fluid galeri-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="img/gambar/3.jpg"
+                alt="Gambar 3"
+                class="img-fluid galeri-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="img/gambar/4.jpg"
+                alt="Gambar 4"
+                class="img-fluid galeri-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="img/gambar/5.jpg"
+                alt="Gambar 5"
+                class="img-fluid galeri-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="img/gambar/6.jpg"
+                alt="Gambar 6"
+                class="img-fluid galeri-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="img/gambar/7.jpg"
+                alt="Gambar 7"
+                class="img-fluid galeri-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="img/gambar/8.jpg"
+                alt="Gambar 8"
+                class="img-fluid galeri-img"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Galeri -->
 
     <!-- Kontak -->
     <section id="kontak">
@@ -301,6 +389,41 @@
       crossorigin="anonymous"
     ></script>
     <script src="sweetalert/sweetalert2.all.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      const galeriImage = document.querySelectorAll(".galeri-img");
+
+      galeriImage.forEach((img, i) => {
+        img.dataset.aos = "fade-down";
+        img.dataset.aosDelay = i * 100;
+        img.dataset.aosDuration = 1000;
+      });
+
+      AOS.init({
+        once: true,
+        duration: 2000,
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".display-4", {
+        duration: 2,
+        delay: 1.5,
+        text: "Dirga Febriyanda",
+      });
+      gsap.to(".lead", {
+        duration: 2,
+        delay: 2,
+        text: "Writer | Programer | Graphic Design",
+      });
+      gsap.from(".jumbotron img", {
+        duration: 1.5,
+        ease: "elastic.out(1, 0.3)",
+        y: 500,
+      });
+    </script>
     <script>
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbxtMrIS1HaD2Q6hjR7REE7L2Wr_fUTf3ND0enbQSreumS9wPf96839zx7fUPeYDHcDi/exec";

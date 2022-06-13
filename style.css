@@ -3,9 +3,17 @@
   background-color: #e2edff;
 }
 
-#galeri {
+#project {
   background-color: #e2edff;
 }
 section {
   padding-top: 5rem;
+}
+
+.galeri-img {
+  width: 100%;
+}
+
+#galeri .row > * {
+  padding: 0;
 }
