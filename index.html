@@ -28,7 +28,7 @@
       class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top"
     >
       <div class="container">
-        <a class="fa fa-paw navbar-brand" href="#beranda">
+        <a class="fa fa-paw navbar-brand" data-tilt href="#beranda">
           A.N.JELL<sup>TM</sup></a
         >
         <button
@@ -44,7 +44,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
+            <li class="nav-item" data-tilt>
               <a class="nav-link active" aria-current="page" href="#beranda"
                 >Beranda</a
               >
@@ -72,6 +72,7 @@
         alt="Dirga Febriyanda"
         width="200"
         class="rounded-circle img-thumbnail"
+        data-tilt
       />
       <h1 class="display-4"></h1>
       <p class="lead"></p>
@@ -132,7 +133,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
-            <div class="card" data-aos="zoom-in-down">
+            <div class="card" data-aos="zoom-in-down" data-tilt>
               <img
                 src="img/project/writer.jpg"
                 class="card-img-top"
@@ -144,7 +145,12 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card" data-aos="zoom-in-down" data-aos-delay="100">
+            <div
+              class="card"
+              data-aos="zoom-in-down"
+              data-tilt
+              data-aos-delay="100"
+            >
               <img
                 src="img/project/programer.jpg"
                 class="card-img-top"
@@ -156,7 +162,12 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card" data-aos="zoom-in-down" data-aos-delay="200">
+            <div
+              class="card"
+              data-aos="zoom-in-down"
+              data-tilt
+              data-aos-delay="200"
+            >
               <img
                 src="img/project/design.jpg"
                 class="card-img-top"
@@ -188,7 +199,7 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-3">
+          <div class="col-md-3" data-tilt>
             <a href="#">
               <img
                 src="img/gambar/1.jpg"
@@ -197,7 +208,7 @@
               />
             </a>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3" data-tilt>
             <a href="#">
               <img
                 src="img/gambar/2.jpg"
@@ -206,7 +217,7 @@
               />
             </a>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3" data-tilt>
             <a href="#">
               <img
                 src="img/gambar/3.jpg"
@@ -215,7 +226,7 @@
               />
             </a>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3" data-tilt>
             <a href="#">
               <img
                 src="img/gambar/4.jpg"
@@ -224,7 +235,7 @@
               />
             </a>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3" data-tilt>
             <a href="#">
               <img
                 src="img/gambar/5.jpg"
@@ -233,7 +244,7 @@
               />
             </a>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3" data-tilt>
             <a href="#">
               <img
                 src="img/gambar/6.jpg"
@@ -242,7 +253,7 @@
               />
             </a>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3" data-tilt>
             <a href="#">
               <img
                 src="img/gambar/7.jpg"
@@ -251,7 +262,7 @@
               />
             </a>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3" data-tilt>
             <a href="#">
               <img
                 src="img/gambar/8.jpg"
@@ -370,19 +381,19 @@
       <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
         <li class="ms-3">
           <a
-            class="fab fa-twitter text-primary navbar-brand"
+            class="fab fa-twitter text-light navbar-brand"
             href="https://www.twitter.com/anjell_1202"
           ></a>
         </li>
         <li class="ms-3">
           <a
-            class="fab fa-instagram text-danger navbar-brand"
+            class="fab fa-instagram text-light navbar-brand"
             href="https://www.instagram.com/a.n.jell_y/"
           ></a>
         </li>
         <li class="ms-3">
           <a
-            class="fab fa-facebook text-primary navbar-brand"
+            class="fab fa-facebook text-light navbar-brand"
             href="https://www.facebook.com/dirga.febriyanda/"
           ></a>
         </li>
@@ -413,6 +424,7 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
     <script>
       gsap.registerPlugin(TextPlugin);
       gsap.to(".display-4", {
