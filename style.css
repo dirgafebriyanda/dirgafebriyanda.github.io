@@ -23,3 +23,7 @@ section {
 .bg-red {
   background-color: #cc0001;
 }
+body {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+}
