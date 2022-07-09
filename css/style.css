@@ -52,3 +52,6 @@ body {
   border-color: #00ff2a;
   z-index: 1;
 }
+.text-shadow {
+  text-shadow: 0.1rem 0.1rem 0.1rem rgb(139, 139, 139);
+}
