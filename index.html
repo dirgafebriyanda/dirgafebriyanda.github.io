@@ -24,9 +24,7 @@
   </head>
   <body id="beranda">
     <!-- Navbar -->
-    <nav
-      class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary shadow-sm"
-    >
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-red shadow-sm">
       <div class="container">
         <a class="fa fa-paw navbar-brand" href="#beranda">
           A.N.JELL<sup>TM</sup></a
@@ -46,17 +44,20 @@
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#beranda"
-                >Beranda</a
+                >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#tentang">Tentang</a>
+              <a class="nav-link" href="#tentang">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#project">Project</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#kontak">Kontak</a>
+              <a class="nav-link" href="#galeri">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontak">Contact</a>
             </li>
           </ul>
         </div>
@@ -77,7 +78,7 @@
       <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#ffffff"
+          fill="#eeeeee"
           fill-opacity="1"
           d="M0,64L21.8,58.7C43.6,53,87,43,131,48C174.5,53,218,75,262,106.7C305.5,139,349,181,393,218.7C436.4,256,480,288,524,277.3C567.3,267,611,213,655,197.3C698.2,181,742,203,785,197.3C829.1,192,873,160,916,149.3C960,139,1004,149,1047,133.3C1090.9,117,1135,75,1178,80C1221.8,85,1265,139,1309,170.7C1352.7,203,1396,213,1418,218.7L1440,224L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
         ></path>
@@ -90,11 +91,14 @@
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
-            <h2>Tentang Saya</h2>
+            <h2>About me</h2>
           </div>
         </div>
-        <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
+        <div
+          class="row justify-content-center fs-5 text-center"
+          style="overflow: hidden"
+        >
+          <div class="col-md-4" data-aos="fade-right">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
               error, dignissimos reprehenderit voluptas recusandae suscipit,
@@ -102,7 +106,7 @@
               Similique?
             </p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-left">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Distinctio iusto sapiente porro ab, rerum modi illo ut eaque
@@ -114,7 +118,7 @@
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#e2edff"
+          fill="#ffcccc"
           fill-opacity="1"
           d="M0,128L21.8,138.7C43.6,149,87,171,131,186.7C174.5,203,218,213,262,218.7C305.5,224,349,224,393,192C436.4,160,480,96,524,74.7C567.3,53,611,75,655,101.3C698.2,128,742,160,785,149.3C829.1,139,873,85,916,85.3C960,85,1004,139,1047,165.3C1090.9,192,1135,192,1178,186.7C1221.8,181,1265,171,1309,160C1352.7,149,1396,139,1418,133.3L1440,128L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
         ></path>
@@ -130,8 +134,8 @@
             <h2>Project</h2>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
+        <div class="row justify-content-center" style="overflow: hidden">
+          <div class="col-md-4 mb-3" data-aos="zoom-out">
             <div class="card">
               <img
                 src="img/project/writer.jpg"
@@ -139,11 +143,11 @@
                 alt="project1"
               />
               <div class="card-body text-center">
-                <p>Writer</p>
+                <p>Copywriter</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-3" data-aos="zoom-out">
             <div class="card">
               <img
                 src="img/project/programer.jpg"
@@ -155,7 +159,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-3" data-aos="zoom-out">
             <div class="card">
               <img
                 src="img/project/design.jpg"
@@ -171,7 +175,7 @@
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#ffffff"
+          fill="#eeeeee"
           fill-opacity="1"
           d="M0,320L18.5,293.3C36.9,267,74,213,111,181.3C147.7,149,185,139,222,138.7C258.5,139,295,149,332,165.3C369.2,181,406,203,443,186.7C480,171,517,117,554,128C590.8,139,628,213,665,234.7C701.5,256,738,224,775,186.7C812.3,149,849,107,886,90.7C923.1,75,960,85,997,117.3C1033.8,149,1071,203,1108,218.7C1144.6,235,1182,213,1218,202.7C1255.4,192,1292,192,1329,165.3C1366.2,139,1403,85,1422,58.7L1440,32L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z"
         ></path>
@@ -181,14 +185,14 @@
 
     <!-- Galeri -->
     <section id="galeri">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row text-center mb-3">
           <div class="col">
-            <h2>Galeri</h2>
+            <h2>Gallery</h2>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-3">
+        <div class="row justify-content-center" style="overflow: hidden">
+          <div class="col-md-3" data-aos="zoom-in">
             <a href="#">
               <img
                 src="img/gambar/1.jpg"
@@ -197,7 +201,7 @@
               />
             </a>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3" data-aos="zoom-in">
             <a href="#">
               <img
                 src="img/gambar/2.jpg"
@@ -206,7 +210,7 @@
               />
             </a>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3" data-aos="zoom-in">
             <a href="#">
               <img
                 src="img/gambar/3.jpg"
@@ -215,7 +219,7 @@
               />
             </a>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3" data-aos="zoom-in">
             <a href="#">
               <img
                 src="img/gambar/4.jpg"
@@ -224,7 +228,7 @@
               />
             </a>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3" data-aos="zoom-in">
             <a href="#">
               <img
                 src="img/gambar/5.jpg"
@@ -233,7 +237,7 @@
               />
             </a>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3" data-aos="zoom-in">
             <a href="#">
               <img
                 src="img/gambar/6.jpg"
@@ -242,7 +246,7 @@
               />
             </a>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3" data-aos="zoom-in">
             <a href="#">
               <img
                 src="img/gambar/7.jpg"
@@ -251,7 +255,7 @@
               />
             </a>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3" data-aos="zoom-in">
             <a href="#">
               <img
                 src="img/gambar/8.jpg"
@@ -264,7 +268,7 @@
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#e2edff"
+          fill="#ffcccc"
           fill-opacity="1"
           d="M0,128L21.8,138.7C43.6,149,87,171,131,186.7C174.5,203,218,213,262,218.7C305.5,224,349,224,393,192C436.4,160,480,96,524,74.7C567.3,53,611,75,655,101.3C698.2,128,742,160,785,149.3C829.1,139,873,85,916,85.3C960,85,1004,139,1047,165.3C1090.9,192,1135,192,1178,186.7C1221.8,181,1265,171,1309,160C1352.7,149,1396,139,1418,133.3L1440,128L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
         ></path>
@@ -277,7 +281,7 @@
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
-            <h2>Kontak</h2>
+            <h2>Contact</h2>
           </div>
         </div>
         <div class="row justify-content-center mb-3">
@@ -323,13 +327,13 @@
               </div>
               <button
                 type="submit"
-                class="btn btn-lg btn-primary btn-kirim"
+                class="btn btn-lg btn-dark btn-kirim"
                 id="kirim"
               >
-                Kirim
+                Send
               </button>
               <button
-                class="btn btn-primary btn-loading d-none"
+                class="btn btn-dark btn-loading d-none"
                 type="button"
                 disabled
               >
@@ -346,7 +350,7 @@
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#0d6efd"
+          fill="#cc0001"
           fill-opacity="1"
           d="M0,128L21.8,149.3C43.6,171,87,213,131,218.7C174.5,224,218,192,262,186.7C305.5,181,349,203,393,229.3C436.4,256,480,288,524,293.3C567.3,299,611,277,655,250.7C698.2,224,742,192,785,192C829.1,192,873,224,916,208C960,192,1004,128,1047,138.7C1090.9,149,1135,235,1178,272C1221.8,309,1265,299,1309,266.7C1352.7,235,1396,181,1418,154.7L1440,128L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
         ></path>
@@ -356,7 +360,7 @@
 
     <!-- footer -->
     <footer
-      class="d-flex flex-wrap justify-content-center align-items-center py-3 bg-primary"
+      class="d-flex flex-wrap justify-content-center align-items-center py-3 bg-red"
     >
       <div class="col-md-4 d-flex align-items-center">
         <a
@@ -364,7 +368,9 @@
           class="mb-3 me-2 mb-md-0 text-white text-decoration-none lh-1"
         >
         </a>
-        <span class="text-light fa fa-paw"> &copy; 2022 A.N.JELLc</span>
+        <span class="text-light fw-bold"
+          >Copyright &copy; 2022 A.N.JELL <sup>TM</sup></span
+        >
       </div>
 
       <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
@@ -398,6 +404,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
     <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        duration: 2000,
+      });
+    </script>
     <script>
       gsap.registerPlugin(TextPlugin);
       gsap.to(".display-4", {
