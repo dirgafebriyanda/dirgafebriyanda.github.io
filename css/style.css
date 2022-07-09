@@ -2,7 +2,9 @@
   padding-top: 5rem;
   background-color: #ffcccc;
 }
-
+.none {
+  text-decoration: none;
+}
 #project,
 #kontak {
   background-color: #ffcccc;
@@ -29,16 +31,24 @@ section {
 body {
   min-height: 75rem;
 }
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  display: none;
+  opacity: 70%;
 }
 
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
+#whatsapp {
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+}
+
+.btn-whatsapp {
+  color: #fff;
+  background-color: #00ff2a;
+  border-color: #00ff2a;
+  z-index: 1;
 }

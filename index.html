@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <link rel="shortcut icon" href="img/favicon.GIF" type="image/x-icon" />
     <!-- Bootstrap CSS -->
     <link
       href="css/bootstrap.min.css"
@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
     <!-- My CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- Fontawesome CSS -->
     <link rel="stylesheet" href="fontawesome-free/css/all.min.css" />
@@ -26,7 +26,7 @@
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-red shadow-sm">
       <div class="container">
-        <a class="fa fa-paw navbar-brand" href="#beranda">
+        <a class="fa fa-paw navbar-brand js-scroll-trigger" href="#beranda">
           A.N.JELL<sup>TM</sup></a
         >
         <button
@@ -43,21 +43,24 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#beranda"
+              <a
+                class="nav-link active js-scroll-trigger"
+                aria-current="page"
+                href="#beranda"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#tentang">About</a>
+              <a class="nav-link js-scroll-trigger" href="#tentang">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#project">Project</a>
+              <a class="nav-link js-scroll-trigger" href="#project">Project</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#galeri">Gallery</a>
+              <a class="nav-link js-scroll-trigger" href="#galeri">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#kontak">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#kontak">Contact</a>
             </li>
           </ul>
         </div>
@@ -396,6 +399,25 @@
     </footer>
     <!-- Akhir footer -->
 
+    <!-- Tombol bawah kembali ke atas dan whatsapp  -->
+    <button
+      type="button"
+      class="btn btn-dark btn-floating btn-sm"
+      id="btn-back-to-top"
+    >
+      <i class="fas fa-angle-up"></i>
+    </button>
+    <button
+      class="btn btn-whatsapp btn-floating btn-sm rounded-circle"
+      id="whatsapp"
+    >
+      <a
+        class="fab fa-whatsapp text-light fa-2x text-center none"
+        href="https://wa.link/uit7pb"
+      ></a>
+    </button>
+    <!-- Akhir tombol bawah kembali ke atas whatsapp -->
+
     <script
       src="js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -404,6 +426,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
     <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script>
+      $(".js-scroll-trigger").click(function () {
+        $(".navbar-collapse").collapse("hide");
+      });
+    </script>
+    <script type="text/javascript" src="js/script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
