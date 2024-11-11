@@ -1,490 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="img/favicon.GIF" type="image/x-icon" />
-    <!-- Bootstrap CSS -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dirga Febriyanda</title>
+
+    <!-- My Own CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
     />
-    <!-- My CSS -->
-    <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Fontawesome CSS -->
-    <link rel="stylesheet" href="fontawesome-free/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+DE+LA:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <title>A.N.JELL</title>
-  </head>
-  <body id="beranda">
-    <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-red shadow-sm">
-      <div class="container">
-        <a class="fa fa-paw navbar-brand js-scroll-trigger" href="#beranda">
-          A.N.JELL<sup>TM</sup></a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a
-                class="nav-link active js-scroll-trigger"
-                aria-current="page"
-                href="#beranda"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#tentang">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#project">Project</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#galeri">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#kontak">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Akhir Navbar -->
-
-    <!-- Jumbotron -->
-    <section class="jumbotron text-center">
-      <img
-        src="img/dirga1.jpg"
-        alt="Dirga Febriyanda"
-        width="200"
-        class="rounded-circle img-thumbnail shadow-sm bg-dark"
-      />
-      <h1 class="display-4 fw-bold text-shadow"></h1>
-      <p class="lead fw-bold text-shadow"></p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#eeeeee"
-          fill-opacity="1"
-          d="M0,64L21.8,58.7C43.6,53,87,43,131,48C174.5,53,218,75,262,106.7C305.5,139,349,181,393,218.7C436.4,256,480,288,524,277.3C567.3,267,611,213,655,197.3C698.2,181,742,203,785,197.3C829.1,192,873,160,916,149.3C960,139,1004,149,1047,133.3C1090.9,117,1135,75,1178,80C1221.8,85,1265,139,1309,170.7C1352.7,203,1396,213,1418,218.7L1440,224L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- Akhir Jumbotron -->
-
-    <!-- Tentang -->
-    <section id="tentang">
-      <div class="container-fluid">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2 class="text-shadow">About me</h2>
-          </div>
-        </div>
-        <div
-          class="row justify-content-center fs-5 text-center"
-          style="overflow: hidden"
-        >
-          <div class="col-md-4" data-aos="fade-right">
-            <p>
-              Hallo, Selamat datang di portofolio saya, perkenalkan saya Dirga Febriyanda biasa di panggil Dirga. saya bekerja di bidang IT yaitu dalam  pengembangan website, desain grafis dan juga copywriter.
-            </p>
-          </div>
-          <div class="col-md-4" data-aos="fade-left">
-            <p>
-             Saya orangnya kreatif, bertanggung jawab, punya rasa penasaran yang tinggi, suka mempelajari hal-hal baru. Saya pernah mempelajari berbagai bahasa pemrograman seperti Pascal, C++, C, C#, Java, HTML, CSS, JS, PHP, SQL, Microsoft Visual Basic. Saya juga pernah mempelajari Desain Grafis, Animasi, Video Editor dan Copywriter.
-            </p>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffcccc"
-          fill-opacity="1"
-          d="M0,128L21.8,138.7C43.6,149,87,171,131,186.7C174.5,203,218,213,262,218.7C305.5,224,349,224,393,192C436.4,160,480,96,524,74.7C567.3,53,611,75,655,101.3C698.2,128,742,160,785,149.3C829.1,139,873,85,916,85.3C960,85,1004,139,1047,165.3C1090.9,192,1135,192,1178,186.7C1221.8,181,1265,171,1309,160C1352.7,149,1396,139,1418,133.3L1440,128L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- Akhir Tentang -->
-
-    <!-- project -->
-    <section id="project">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2 class="text-shadow">Project</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center" style="overflow: hidden">
-          <div class="col-md-4 mb-3" data-aos="zoom-out">
-            <div class="card">
-              <img
-                src="img/project/writer.jpg"
-                class="card-img-top"
-                alt="project1"
-              />
-              <div class="card-body text-center">
-                <p class="text-shadow">Copywriter</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3" data-aos="zoom-out">
-            <div class="card">
-              <img
-                src="img/project/programer.jpg"
-                class="card-img-top"
-                alt="project2"
-              />
-              <div class="card-body text-center">
-                <p class="text-shadow">Programer</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3" data-aos="zoom-out">
-            <div class="card">
-              <img
-                src="img/project/design.jpg"
-                class="card-img-top"
-                alt="project3"
-              />
-              <div class="card-body text-center">
-                <p class="text-shadow">Graphic Design</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#eeeeee"
-          fill-opacity="1"
-          d="M0,320L18.5,293.3C36.9,267,74,213,111,181.3C147.7,149,185,139,222,138.7C258.5,139,295,149,332,165.3C369.2,181,406,203,443,186.7C480,171,517,117,554,128C590.8,139,628,213,665,234.7C701.5,256,738,224,775,186.7C812.3,149,849,107,886,90.7C923.1,75,960,85,997,117.3C1033.8,149,1071,203,1108,218.7C1144.6,235,1182,213,1218,202.7C1255.4,192,1292,192,1329,165.3C1366.2,139,1403,85,1422,58.7L1440,32L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- Akhir project -->
-
-    <!-- Galeri -->
-    <section id="galeri">
-      <div class="container-fluid">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2 class="text-shadow">Gallery</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center" style="overflow: hidden">
-          <div class="col-md-3" data-aos="zoom-in">
-            <a href="img/gambar/1.jpg">
-              <img
-                src="img/gambar/1.jpg"
-                alt="Hutan Kenangan"
-                class="img-fluid galeri-img"
-              />
-            </a>
-          </div>
-          <div class="col-md-3" data-aos="zoom-in">
-            <a href="img/gambar/2.jpg">
-              <img
-                src="img/gambar/2.jpg"
-                alt="Pohon Harapan"
-                class="img-fluid galeri-img"
-              />
-            </a>
-          </div>
-          <div class="col-md-3" data-aos="zoom-in">
-            <a href="img/gambar/3.jpg">
-              <img
-                src="img/gambar/3.jpg"
-                alt="Pantai Kebahagiaan"
-                class="img-fluid galeri-img"
-              />
-            </a>
-          </div>
-          <div class="col-md-3" data-aos="zoom-in">
-            <a href="img/gambar/4.jpg">
-              <img
-                src="img/gambar/4.jpg"
-                alt="Pemandangan Suram"
-                class="img-fluid galeri-img"
-              />
-            </a>
-          </div>
-          <div class="col-md-3" data-aos="zoom-in">
-            <a href="img/gambar/5.jpg">
-              <img
-                src="img/gambar/5.jpg"
-                alt="Bulan Kelahiran"
-                class="img-fluid galeri-img"
-              />
-            </a>
-          </div>
-          <div class="col-md-3" data-aos="zoom-in">
-            <a href="img/gambar/6.jpg">
-              <img
-                src="img/gambar/6.jpg"
-                alt="Bukit Mantan"
-                class="img-fluid galeri-img"
-              />
-            </a>
-          </div>
-          <div class="col-md-3" data-aos="zoom-in">
-            <a href="img/gambar/7.jpg">
-              <img
-                src="img/gambar/7.jpg"
-                alt="Bambu Kesakitan"
-                class="img-fluid galeri-img"
-              />
-            </a>
-          </div>
-          <div class="col-md-3" data-aos="zoom-in">
-            <a href="img/gambar/8.jpg">
-              <img
-                src="img/gambar/8.jpg"
-                alt="Jurang Kesulitan"
-                class="img-fluid galeri-img"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffcccc"
-          fill-opacity="1"
-          d="M0,128L21.8,138.7C43.6,149,87,171,131,186.7C174.5,203,218,213,262,218.7C305.5,224,349,224,393,192C436.4,160,480,96,524,74.7C567.3,53,611,75,655,101.3C698.2,128,742,160,785,149.3C829.1,139,873,85,916,85.3C960,85,1004,139,1047,165.3C1090.9,192,1135,192,1178,186.7C1221.8,181,1265,171,1309,160C1352.7,149,1396,139,1418,133.3L1440,128L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- Akhir Galeri -->
-
-    <!-- Kontak -->
-    <section id="kontak">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2 class="text-shadow">Contact</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center mb-3">
-          <div class="col-md-6">
-            <div
-              class="alert alert-success alert-dismissible fade show d-none my-alert"
-              role="alert"
-            >
-              <strong>Terimakasih!</strong> Pesan anda sudah kami terima.
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="alert"
-                aria-label="Close"
-              ></button>
-            </div>
-            <form name="kontak-form" action="" method="post">
-              <div class="mb-3">
-                <label for="nama">Nama Lengkap</label>
-                <input type="text" class="form-control" id="nama" name="nama" />
-              </div>
-              <div class="mb-3">
-                <label for="nohp">No Handphone</label>
-                <input type="text" class="form-control" id="nohp" name="nohp" />
-              </div>
-              <div class="mb-3">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  name="email"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="pesan">Pesan</label>
-                <textarea
-                  class="form-control"
-                  id="pesan"
-                  rows="5"
-                  name="pesan"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                class="btn btn-lg btn-dark btn-kirim"
-                id="kirim"
-              >
-                Send
-              </button>
-              <button
-                class="btn btn-dark btn-loading d-none"
-                type="button"
-                disabled
-              >
-                <span
-                  class="spinner-border spinner-border-sm"
-                  role="status"
-                  aria-hidden="true"
-                ></span>
-                Loading...
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#cc0001"
-          fill-opacity="1"
-          d="M0,128L21.8,149.3C43.6,171,87,213,131,218.7C174.5,224,218,192,262,186.7C305.5,181,349,203,393,229.3C436.4,256,480,288,524,293.3C567.3,299,611,277,655,250.7C698.2,224,742,192,785,192C829.1,192,873,224,916,208C960,192,1004,128,1047,138.7C1090.9,149,1135,235,1178,272C1221.8,309,1265,299,1309,266.7C1352.7,235,1396,181,1418,154.7L1440,128L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- Akhir Kontak -->
-
-    <!-- footer -->
-    <footer
-      class="d-flex flex-wrap justify-content-center align-items-center py-3 bg-red"
-    >
-      <div class="col-md-4 d-flex align-items-center">
-        <a
-          href="/"
-          class="mb-3 me-2 mb-md-0 text-white text-decoration-none lh-1"
-        >
-        </a>
-        <span class="text-light fw-bold text-shadow"
-          >Copyright &copy; 2022 A.N.JELL <sup>TM</sup></span
-        >
-      </div>
-
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3">
-          <a
-            class="fab fa-twitter text-info navbar-brand"
-            href="https://www.twitter.com/anjell_1202"
-          ></a>
-        </li>
-        <li class="ms-3">
-          <a
-            class="fab fa-instagram text-light navbar-brand"
-            href="https://www.instagram.com/a.n.jell_y/"
-          ></a>
-        </li>
-        <li class="ms-3">
-          <a
-            class="fab fa-facebook text-primary navbar-brand"
-            href="https://www.facebook.com/dirga.febriyanda/"
-          ></a>
-        </li>
-      </ul>
-    </footer>
-    <!-- Akhir footer -->
-
-    <!-- Tombol bawah kembali ke atas dan whatsapp  -->
-    <button
-      type="button"
-      class="btn btn-dark btn-floating btn-sm"
-      id="btn-back-to-top"
-    >
-      <i class="fas fa-angle-up"></i>
-    </button>
-    <button
-      class="btn btn-whatsapp btn-floating btn-sm rounded-circle"
-      id="whatsapp"
-    >
-      <a
-        class="fab fa-whatsapp text-light fa-2x text-center none"
-        href="https://wa.link/tnjm88"
-      ></a>
-    </button>
-    <!-- Akhir tombol bawah kembali ke atas whatsapp -->
-
-    <script
-      src="js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    <!-- Font Awesome 5.15.4 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
-    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script>
-      $(".js-scroll-trigger").click(function () {
-        $(".navbar-collapse").collapse("hide");
-      });
-    </script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        once: true,
-        duration: 2000,
-      });
-    </script>
-    <script>
-      gsap.registerPlugin(TextPlugin);
-      gsap.to(".display-4", {
-        duration: 2,
-        delay: 1.5,
-        text: "Dirga Febriyanda",
-      });
-      gsap.to(".lead", {
-        duration: 2,
-        delay: 2,
-        text: "Copywriter | Programer | Graphic Design",
-      });
-      gsap.from(".jumbotron img", {
-        duration: 2,
-        rotateY: 360,
-        opcity: 0,
-      });
-      gsap.from(".navbar", {
-        duration: 1.5,
-        y: -100,
-        opcity: 0,
-        ease: "bounce",
-      });
-    </script>
-    <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbzj_et1s5KIwyNAR-gwYtuw-Exn3ynzFS3uTGu9jjtZ7913V8vizn-IcRj1QWCtHmqr4w/exec";
-      const form = document.forms["kontak-form"];
-      const btnKirim = document.querySelector(".btn-kirim");
-      const btnLoading = document.querySelector(".btn-loading");
-      const myAlert = document.querySelector(".my-alert");
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h3 class="navbar-logo">
+          <a href="#">df</a>
+        </h3>
+        <div class="navbar-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="navbar-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        // ketika tombol submit diklik
-        // tampilkan tombol loading hilangkan tombol kirim
-        btnLoading.classList.toggle("d-none");
-        btnKirim.classList.toggle("d-none");
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            // tampilkan tombol loading hilangkan tombol kirim
-            btnLoading.classList.toggle("d-none");
-            btnKirim.classList.toggle("d-none");
-            // tampilkan alert
-            myAlert.classList.toggle("d-none");
-            // reset formnya
-            form.reset();
-            console.log("Success!", response);
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
+    <main>
+      <!-- home -->
+      <section class="home" id="home">
+        <div class="h-caption">
+          <h4>Hello, I'm</h4>
+          <h2>Dirga Febriyanda</h2>
+          <p>
+            A web developer with a passion for building dynamic, user-friendly
+            websites and applications. With a strong foundation in both
+            front-end and back-end development.
+          </p>
+          <!-- <a href="#" class="h-btn"
+            >Let's Chat <i class="fas fa-angle-right"></i
+          ></a> -->
+
+          <a
+            href="https://www.facebook.com/your-profile"
+            target="_blank"
+            class="h-social-media"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/your-profile"
+            target="_blank"
+            class="h-social-media"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://github.com/your-profile"
+            target="_blank"
+            class="h-social-media"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <div class="j-img">
+          <img src="assets/img/homea.png" alt="Dirga Febriyanda" />
+        </div>
+        <div class="arrow">
+          <a href="#about"><i class="fas fa-angle-down"></i></a>
+        </div>
+      </section>
+
+      <img src="assets/img/wave/wave-hero.png" style="width: 100%" alt="" />
+
+      <!-- about -->
+      <section class="about" id="about">
+        <div class="about-img">
+          <img
+            src="assets/img/Picsart_24-11-06_18-53-35-130.jpg"
+            alt="Dirga Febriyanda"
+          />
+        </div>
+        <div class="about-text">
+          <h4>Welcome to about me</h4>
+          <h2 class="description">Creative Web Developer</h2>
+          <p>
+            Hello! I'm Dirga Febriyanda, a passionate web developer focused on
+            building innovative, user-centered applications. With expertise in
+            both front-end and back-end technologies, I am dedicated to
+            delivering effective solutions that meet users' needs seamlessly.
+          </p>
+          <p>
+            Staying current with the latest advancements, I continuously sharpen
+            my skills to ensure they remain relevant. For me, learning and
+            evolving in this dynamic industry is both a priority and a passion
+          </p>
+          <a href="#skills" class="btn-about"
+            >Let's Chat <i class="fas fa-angle-right"></i
+          ></a>
+        </div>
+      </section>
+
+      <!-- skills -->
+      <section class="skills" id="skills">
+        <div class="s-text">
+          <h4>Current Skills Level</h4>
+          <h2>
+            Laying the Foundation for <br />
+            the Future
+          </h2>
+        </div>
+        <div class="skill-set">
+          <div class="skill-item">
+            <img src="assets/img/logo/html-logo.png" alt="HTML" />
+            <span class="skill-level"
+              >HTML <br /><i class="level">Beginner</i></span
+            >
+          </div>
+          <div class="skill-item">
+            <img src="assets/img/logo/css-logo.png" alt="CSS" />
+            <span class="skill-level"
+              >CSS <br /><i class="level">Beginner</i></span
+            >
+          </div>
+          <div class="skill-item">
+            <img src="assets/img/logo/js-logo.png" alt="JavaScript" />
+            <span class="skill-level"
+              >JavaScript <br /><i class="level">Beginner</i></span
+            >
+          </div>
+          <div class="skill-item">
+            <img src="assets/img/logo/php-logo.png" alt="PHP" />
+            <span class="skill-level"
+              >PHP <br /><i class="level">Beginner</i></span
+            >
+          </div>
+          <div class="skill-item">
+            <img src="assets/img/logo/laravel-logo.png" alt="Laravel" />
+            <span class="skill-level"
+              >Laravel <br /><i class="level">Beginner</i></span
+            >
+          </div>
+          <div class="skill-item">
+            <img src="assets/img/logo/bootstrap-logo.png" alt="Bootstrap" />
+            <span class="skill-level"
+              >Bootstrap <br /><i class="level">Beginner</i></span
+            >
+          </div>
+          <div class="skill-item">
+            <img src="assets/img/logo/tailwind-logo.png" alt="Tailwind CSS" />
+            <span class="skill-level"
+              >Tailwind <br /><i class="level">Beginner</i></span
+            >
+          </div>
+          <div class="skill-item">
+            <img src="assets/img/logo/vue-logo.png" alt="Vue.js" />
+            <span class="skill-level"
+              >Vue <br /><i class="level">Beginner</i></span
+            >
+          </div>
+          <div class="skill-item">
+            <img src="assets/img/logo/git-logo.png" alt="Git" />
+            <span class="skill-level"
+              >Git <br /><i class="level">Beginner</i></span
+            >
+          </div>
+          <div class="skill-item">
+            <img src="assets/img/logo/photoshop-logo.png" alt="Photoshop" />
+            <span class="skill-level"
+              >Photoshop <br /><i class="level">Beginner</i></span
+            >
+          </div>
+          <div class="skill-item">
+            <img src="assets/img/logo/figma-logo.png" alt="Figma" />
+            <span class="skill-level"
+              >Figma <br /><i class="level">Beginner</i></span
+            >
+          </div>
+          <div class="skill-item">
+            <img src="assets/img/logo/coreldraw-logo.png" alt="CorelDRAW" />
+            <span class="skill-level"
+              >CorelDraw <br /><i class="level">Beginner</i></span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section class="contact" id="contact">
+        <div class="contact-box">
+          <h4>Start Collaborating Now</h4>
+          <br />
+          <form
+            action="mailto:example@example.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Enter the subject"
+              required
+            />
+
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write your message"
+              required
+            ></textarea>
+            <button type="submit">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+        <div class="contact-box">
+          <h4>Ready to Collaborate</h4>
+          <h2>Let's Work Together</h2>
+          <p>
+            I am open to collaborating and bringing innovative ideas to life.
+            Whether it's through creative projects, business ventures, or mutual
+            growth, I'm always eager to work with like-minded individuals and
+            teams. If you have a project or an opportunity in mind, don't
+            hesitate to reach out. Together, we can achieve great things and
+            make an impact. Collaboration is the key to success, and I believe
+            that every partnership brings something unique to the table. Let's
+            combine our strengths and skills for something remarkable.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="copyright">
+        <div class="end-text1">
+          <p>Ⓒ 2022 Dirga Febriyanda. All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

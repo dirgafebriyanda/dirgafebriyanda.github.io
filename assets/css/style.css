@@ -1,0 +1,527 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --h1-font: 4rem;
+  --h2-font: 3.5rem;
+  --p-font: 1.1rem;
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --main-color: #00ff00;
+  --other-color: #727272;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #000000;
+  height: 55px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 3px 3px 5px rgb(36, 0, 0, 0.7);
+}
+.navbar-logo a {
+  font-family: "Playwrite DE LA", sans-serif;
+  font-weight: bold;
+  color: var(--main-color);
+  letter-spacing: 2px;
+}
+.navbar-list {
+  display: flex;
+  list-style: none;
+}
+.navbar-list a {
+  margin-right: 20px;
+  color: var(--bg-color);
+  position: relative;
+  font-weight: 500;
+  overflow: hidden;
+  padding-bottom: 4px;
+  letter-spacing: 1.5px;
+  transition: all 0.7s ease;
+}
+.navbar-list a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #00ff00;
+  height: 2px;
+  transform: scaleX(0);
+  transition: all 0.7s ease;
+}
+.navbar-list a:hover {
+  color: var(--main-color);
+  transform: scale(1);
+}
+.navbar-list a:hover::before {
+  transform: scaleX(1);
+}
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.navbar-toggle span {
+  width: 25px;
+  height: 2px;
+  border-radius: 5px;
+  background: #ffffff;
+  display: block;
+  margin: 3px 0;
+  transition: transform 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+}
+.navbar-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px);
+  background: #00ff00;
+}
+.navbar-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+.navbar-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -6px);
+  background: #00ff00;
+}
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  height: 100vh;
+  background: #000000;
+  color: var(--bg-color);
+}
+.h-caption {
+  margin: 0 0 50px 50px;
+  max-width: 600px;
+}
+.h-caption h4 {
+  font-size: 2rem;
+  color: var(--main-color);
+}
+.h-caption h2 {
+  padding-bottom: 20px;
+  font-size: var(--h2-font);
+}
+.home img {
+  margin: 50px;
+  max-width: 350px;
+}
+.arrow {
+  position: absolute;
+  bottom: 8%;
+  right: 5%;
+}
+.arrow i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background: #00ff00;
+  color: var(--text-color);
+  border-radius: 50%;
+  font-size: 25px;
+  transition: color 0.7s ease, transform 0.7s ease;
+}
+.arrow i:hover {
+  background: transparent;
+  border: var(--main-color) solid 2px;
+  color: var(--main-color);
+  transform: translateY(-4px);
+}
+.h-social-media {
+  margin-top: 30px;
+  display: inline-flex;
+  color: var(--bg-color);
+  padding-right: 20px;
+  font-size: 40px;
+  transition: all 0.7s ease;
+}
+.h-social-media:hover {
+  color: var(--main-color);
+  transform: translateY(-4px);
+}
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 75px;
+  gap: 5rem;
+}
+.about-img {
+  flex-shrink: 0;
+}
+.about-img img {
+  border-radius: 5%;
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  box-shadow: 4px 4px 7px rgb(36, 0, 0, 0.7);
+  filter: grayscale(100%);
+  transition: filter 0.7s ease;
+}
+.about-img img:hover {
+  filter: grayscale(0%);
+}
+.about-text {
+  flex: 1;
+}
+.about-text h2 {
+  font-size: var(--h2-font);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 15px 0;
+}
+.about-text h4 {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+.about-text p {
+  font-size: var(--p-font);
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--other-color);
+  margin-bottom: 25px;
+}
+.btn-about {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 200px;
+  background: transparent;
+  color: var(--main-color);
+  border-radius: 2px 20px 2px 20px;
+  font-size: 20px;
+  border: var(--main-color) solid 2px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.7s ease;
+}
+.btn-about:hover {
+  color: var(--bg-color);
+  background: #00ff00;
+  transform: translateY(-4px);
+  box-shadow: 3px 3px 6px rgb(0, 0, 0, 0.5);
+}
+.btn-about i {
+  padding-left: 30px;
+}
+.skills {
+  padding: 75px;
+  text-align: center;
+}
+.s-text h2 {
+  font-size: var(--h2-font);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 15px 0;
+}
+.s-text h4 {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+.skill-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+}
+.skill-item {
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-basis: calc(25% - 1.5rem);
+  max-width: 220px;
+  max-height: 80px;
+  padding: 5px;
+  border: var(--main-color) solid 1px;
+  border-radius: 8px;
+  filter: grayscale(100%);
+  box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.5);
+  transition: transform 0.7s ease;
+}
+.skill-item:hover {
+  transform: translateY(-5px);
+  filter: grayscale(0%);
+}
+.skill-item img {
+  width: 30%;
+  height: auto;
+  margin-right: 1rem;
+}
+.skill-level {
+  font-weight: bold;
+  color: var(--text-color);
+  text-align: start;
+  font-size: 17px;
+  cursor: default;
+}
+.level {
+  color: var(--other-color);
+  font-weight: 400;
+}
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  background: #000000;
+  background-image: url(../img/c.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 75px;
+}
+.contact-box {
+  display: flex;
+  flex-direction: column;
+}
+.contact-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+}
+.contact-box form input,
+.contact-box form textarea {
+  padding: 10px;
+  border: #ccc solid 1px;
+  border-radius: 20px;
+  font-size: 16px;
+  width: 100%;
+}
+.contact-box form button {
+  background: transparent;
+  color: var(--main-color);
+  padding: 10px;
+  border: var(--main-color) solid 1px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.9s ease;
+}
+.contact-box form button:hover {
+  color: var(--text-color);
+  background: #00ff00;
+  transform: translatey(-4px);
+}
+.contact-box form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+.contact-box h2 {
+  font-size: var(--h2-font);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 15px 0;
+  color: var(--bg-color);
+}
+.contact-box h4 {
+  color: var(--bg-color);
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+.contact-box p {
+  color: var(--other-color);
+  font-size: 16px;
+  line-height: 1.6;
+}
+.copyright {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 17px 20px;
+  background: #0c0c0c;
+}
+.end-text1 p {
+  font-size: 15px;
+  color: var(--other-color);
+  cursor: default;
+}
+.end-text2 a {
+  font-size: 17px;
+  color: var(--other-color);
+  transition: all 0.7s ease;
+}
+.end-text2 a:hover {
+  color: white;
+}
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+  }
+  .navbar-logo a {
+    margin-left: 20px;
+  }
+  .navbar-list {
+    flex-direction: column;
+    position: absolute;
+    top: 55px;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    pointer-events: none;
+    transform: translateX(100%);
+    transition: all 0.7s ease;
+  }
+  .navbar-list.show {
+    transform: translateX(0);
+    pointer-events: auto;
+  }
+  .navbar-list li {
+    padding-top: 15px;
+    margin-left: 20px;
+  }
+  .navbar-toggle {
+    display: flex;
+    margin-right: 20px;
+  }
+  .home {
+    flex-direction: column;
+    display: flex;
+  }
+  .h-caption {
+    order: 2;
+    margin: 0 20px 30px 20px;
+    text-align: center;
+  }
+  .h-caption h4 {
+    font-size: 1.5rem;
+  }
+  .h-caption h2 {
+    font-size: 1.6rem;
+  }
+  .home img {
+    margin: 0;
+    order: 1;
+    max-width: 100%;
+    max-height: 250px;
+  }
+  .arrow {
+    bottom: 5%;
+    right: 2%;
+  }
+  .arrow i {
+    height: 35px;
+    width: 35px;
+    font-size: 22px;
+  }
+  .h-social-media {
+    font-size: 30px;
+    margin-top: 20px;
+    padding-right: 15px;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding: 75px 15px 75px 15px;
+  }
+  .about-img {
+    max-width: 100%;
+    max-height: 250px;
+    margin-bottom: 170px;
+  }
+  .about-text h4 {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .about-text h2 {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  .skills {
+    padding: 50px 20px;
+  }
+  .s-text h2 {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  .s-text h4 {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .skill-set {
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  .skill-item {
+    flex-basis: calc(50% - 1.5rem);
+    max-width: 45%;
+    max-height: 100px;
+    padding: 10px;
+  }
+  .skill-item img {
+    width: 25%;
+    margin-right: 1rem;
+  }
+  .skill-level {
+    font-size: 16px;
+  }
+  .level {
+    font-size: 14px;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  .contact-box {
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgb(0, 0, 0, 0.2);
+  }
+  .contact-box form {
+    gap: 15px;
+    width: 100%;
+    max-width: none;
+  }
+  .contact-box h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .contact-box h4 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .contact-box p {
+    font-size: 14px;
+  }
+  .contact-box form input,
+  .contact-box form textarea {
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+  .contact-box form button {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  .contact-box form textarea {
+    min-height: 150px;
+  }
+}
