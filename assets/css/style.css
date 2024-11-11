@@ -434,7 +434,7 @@
   }
   .about {
     flex-direction: column; /* Change layout to column */
-    padding: 40px; /* Adjust padding for smaller screens */
+    padding: 75px 40px 75px 40px; /* Adjust padding for smaller screens */
     gap: 2rem; /* Reduce gap between elements */
   }
 
