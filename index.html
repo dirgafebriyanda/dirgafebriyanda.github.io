@@ -122,7 +122,7 @@
             my skills to ensure they remain relevant. For me, learning and
             evolving in this dynamic industry is both a priority and a passion
           </p>
-          <a href="#skills" class="btn-about"
+          <a href="https://wa.me/082281170130" class="btn-about"
             >Let's Chat <i class="fas fa-angle-right"></i
           ></a>
         </div>
@@ -215,11 +215,7 @@
         <div class="contact-box">
           <h4>Start Collaborating Now</h4>
           <br />
-          <form
-            action="mailto:example@example.com"
-            method="post"
-            enctype="text/plain"
-          >
+          <form id="contactForm">
             <input
               type="text"
               id="name"
@@ -242,10 +238,39 @@
               placeholder="Write your message"
               required
             ></textarea>
-            <button type="submit">
-              <i class="fas fa-paper-plane"></i> Send Message
-            </button>
+
+            <button type="submit">Send Message</button>
           </form>
+
+          <script>
+            document
+              .getElementById("contactForm")
+              .addEventListener("submit", function (event) {
+                event.preventDefault(); // Mencegah form dari pengiriman default
+
+                var name = document.getElementById("name").value;
+                var subject = document.getElementById("subject").value;
+                var message = document.getElementById("message").value;
+
+                var mailtoLink =
+                  "mailto:dirgafebriyanda12@gmail.com" +
+                  "?subject=" +
+                  encodeURIComponent("Form Submission - " + name) +
+                  "&body=" +
+                  encodeURIComponent(
+                    "Name: " +
+                      name +
+                      "\n\n" +
+                      "Subject: " +
+                      subject +
+                      "\n\n" +
+                      "Message: " +
+                      message
+                  );
+
+                window.location.href = mailtoLink; // Membuka aplikasi email dengan link mailto
+              });
+          </script>
         </div>
         <div class="contact-box">
           <h4>Ready to Collaborate</h4>
