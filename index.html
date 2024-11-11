@@ -225,10 +225,10 @@
             />
 
             <input
-              type="text"
-              id="subject"
-              name="subject"
-              placeholder="Enter the subject"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter the email"
               required
             />
 
@@ -249,20 +249,20 @@
                 event.preventDefault(); // Mencegah form dari pengiriman default
 
                 var name = document.getElementById("name").value;
-                var subject = document.getElementById("subject").value;
+                var email = document.getElementById("email").value;
                 var message = document.getElementById("message").value;
 
                 var mailtoLink =
                   "mailto:dirgafebriyanda12@gmail.com" +
-                  "?subject=" +
+                  "?email=" +
                   encodeURIComponent("Form Submission - " + name) +
                   "&body=" +
                   encodeURIComponent(
                     "Name: " +
                       name +
                       "\n\n" +
-                      "Subject: " +
-                      subject +
+                      "email: " +
+                      email +
                       "\n\n" +
                       "Message: " +
                       message
