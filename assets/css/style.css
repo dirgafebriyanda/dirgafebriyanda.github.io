@@ -453,8 +453,13 @@
   .about-text p {
     font-size: 14px;
   }
+  .btn-about {
+    width: 100%;
+  }
+
+  /* skils */
   .skills {
-    padding: 50px 20px;
+    padding: 75px 20px;
   }
   .s-text h2 {
     text-align: center;
