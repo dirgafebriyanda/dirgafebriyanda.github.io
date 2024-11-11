@@ -466,7 +466,7 @@
   }
   .skill-set {
     flex-direction: row;
-    gap: 1.5rem;
+    gap: 1.2rem;
     justify-content: center;
   }
   .skill-item {
