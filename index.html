@@ -9,6 +9,15 @@
     <!-- My Own CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -48,6 +57,7 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
+          <li><a href="#project">Project</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -55,8 +65,8 @@
 
     <main>
       <!-- home -->
-      <section class="home" id="home">
-        <div class="h-caption">
+      <section class="home" id="home" style="overflow: hidden">
+        <div class="h-caption" data-aos="zoom-out">
           <h4>Hello, I'm</h4>
           <h2>Dirga Febriyanda</h2>
           <p>
@@ -90,7 +100,7 @@
             <i class="fab fa-github"></i>
           </a>
         </div>
-        <div class="j-img">
+        <div class="j-img" data-aos="zoom-out">
           <img src="assets/img/homea.png" alt="Dirga Febriyanda" />
         </div>
         <div class="arrow">
@@ -101,14 +111,14 @@
       <img src="assets/img/wave/wave-hero.png" style="width: 100%" alt="" />
 
       <!-- about -->
-      <section class="about" id="about">
-        <div class="about-img">
+      <section class="about" id="about" style="overflow: hidden">
+        <div class="about-img" data-aos="flip-left">
           <img
             src="assets/img/Picsart_24-11-06_18-53-35-130.jpg"
             alt="Dirga Febriyanda"
           />
         </div>
-        <div class="about-text">
+        <div class="about-text" data-aos="fade-left">
           <h4>Welcome to about me</h4>
           <h2 class="description">Creative Web Developer</h2>
           <p>
@@ -129,90 +139,163 @@
       </section>
 
       <!-- skills -->
-      <section class="skills" id="skills">
-        <div class="s-text">
+      <section class="skills" id="skills" style="overflow: hidden">
+        <div class="s-text" data-aos="zoom-out">
           <h4>Current Skills Level</h4>
           <h2>Laying the Foundation <br />for the Future</h2>
         </div>
         <div class="skill-set">
-          <div class="skill-item">
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
             <img src="assets/img/logo/html-logo.png" alt="HTML" />
-            <span class="skill-level"
-              >HTML <br /><i class="level">Beginner</i></span
-            >
+            <span class="skill-level">HTML</span>
           </div>
-          <div class="skill-item">
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
             <img src="assets/img/logo/css-logo.png" alt="CSS" />
-            <span class="skill-level"
-              >CSS <br /><i class="level">Beginner</i></span
-            >
+            <span class="skill-level">CSS</span>
           </div>
-          <div class="skill-item">
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
             <img src="assets/img/logo/js-logo.png" alt="JavaScript" />
-            <span class="skill-level"
-              >JavaScript <br /><i class="level">Beginner</i></span
-            >
+            <span class="skill-level">JavaScript</span>
           </div>
-          <div class="skill-item">
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
             <img src="assets/img/logo/php-logo.png" alt="PHP" />
-            <span class="skill-level"
-              >PHP <br /><i class="level">Beginner</i></span
-            >
+            <span class="skill-level">PHP</span>
           </div>
-          <div class="skill-item">
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
             <img src="assets/img/logo/laravel-logo.png" alt="Laravel" />
-            <span class="skill-level"
-              >Laravel <br /><i class="level">Beginner</i></span
-            >
+            <span class="skill-level">Laravel</span>
           </div>
-          <div class="skill-item">
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
             <img src="assets/img/logo/bootstrap-logo.png" alt="Bootstrap" />
-            <span class="skill-level"
-              >Bootstrap <br /><i class="level">Beginner</i></span
-            >
+            <span class="skill-level">Bootstrap</span>
           </div>
-          <div class="skill-item">
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
             <img src="assets/img/logo/tailwind-logo.png" alt="Tailwind CSS" />
-            <span class="skill-level"
-              >Tailwind <br /><i class="level">Beginner</i></span
-            >
+            <span class="skill-level">Tailwind </span>
           </div>
-          <div class="skill-item">
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
             <img src="assets/img/logo/vue-logo.png" alt="Vue.js" />
-            <span class="skill-level"
-              >Vue <br /><i class="level">Beginner</i></span
-            >
+            <span class="skill-level">Vue </span>
           </div>
-          <div class="skill-item">
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
             <img src="assets/img/logo/git-logo.png" alt="Git" />
-            <span class="skill-level"
-              >Git <br /><i class="level">Beginner</i></span
-            >
+            <span class="skill-level">Git</span>
           </div>
-          <div class="skill-item">
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
             <img src="assets/img/logo/photoshop-logo.png" alt="Photoshop" />
-            <span class="skill-level"
-              >Photoshop <br /><i class="level">Beginner</i></span
-            >
+            <span class="skill-level">Photoshop</span>
           </div>
-          <div class="skill-item">
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
             <img src="assets/img/logo/figma-logo.png" alt="Figma" />
-            <span class="skill-level"
-              >Figma <br /><i class="level">Beginner</i></span
-            >
+            <span class="skill-level">Figma</span>
           </div>
-          <div class="skill-item">
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
             <img src="assets/img/logo/coreldraw-logo.png" alt="CorelDRAW" />
-            <span class="skill-level"
-              >CorelDraw <br /><i class="level">Beginner</i></span
-            >
+            <span class="skill-level">CorelDraw </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- project -->
+      <section class="project" id="project" style="overflow: hidden">
+        <div class="p-text" data-aos="zoom-out">
+          <h4>Recent Projects</h4>
+          <h2>
+            Bringing Ideas to Life <br />
+            through Code
+          </h2>
+          <div class="project-set">
+            <a href="#" class="project-item" data-aos="fade-right">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <img
+                    class="swiper-slide"
+                    src="assets/img/project/1.png"
+                    alt="img 1"
+                  />
+                  <img
+                    class="swiper-slide"
+                    src="assets/img/project/2.png"
+                    alt="img 2"
+                  />
+                  <img
+                    class="swiper-slide"
+                    src="assets/img/project/3.png"
+                    alt="img 3"
+                  />
+                </div>
+              </div>
+            </a>
+            <a href="#" class="project-item" data-aos="fade-left">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <img
+                    class="swiper-slide"
+                    src="assets/img/project/1.png"
+                    alt="img 1"
+                  />
+                  <img
+                    class="swiper-slide"
+                    src="assets/img/project/2.png"
+                    alt="img 2"
+                  />
+                  <img
+                    class="swiper-slide"
+                    src="assets/img/project/3.png"
+                    alt="img 3"
+                  />
+                </div>
+              </div>
+            </a>
+            <a href="#" class="project-item" data-aos="fade-right">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <img
+                    class="swiper-slide"
+                    src="assets/img/project/1.png"
+                    alt="img 1"
+                  />
+                  <img
+                    class="swiper-slide"
+                    src="assets/img/project/2.png"
+                    alt="img 2"
+                  />
+                  <img
+                    class="swiper-slide"
+                    src="assets/img/project/3.png"
+                    alt="img 3"
+                  />
+                </div>
+              </div>
+            </a>
+            <a href="#" class="project-item" data-aos="fade-left">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <img
+                    class="swiper-slide"
+                    src="assets/img/project/1.png"
+                    alt="img 1"
+                  />
+                  <img
+                    class="swiper-slide"
+                    src="assets/img/project/2.png"
+                    alt="img 2"
+                  />
+                  <img
+                    class="swiper-slide"
+                    src="assets/img/project/3.png"
+                    alt="img 3"
+                  />
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </section>
 
       <!-- contact -->
-      <section class="contact" id="contact">
-        <div class="contact-box">
+      <section class="contact" id="contact" style="overflow: hidden">
+        <div class="contact-box" data-aos="fade-right">
           <h4>Start Collaborating Now</h4>
           <br />
           <form id="contactForm">
@@ -272,7 +355,7 @@
               });
           </script>
         </div>
-        <div class="contact-box">
+        <div class="contact-box" data-aos="fade-left">
           <h4>Ready to Collaborate</h4>
           <h2>Let's Work Together</h2>
           <p>
@@ -296,6 +379,37 @@
         </div>
       </div>
     </footer>
+
+    <!-- Tombol Back to Top -->
+    <div class="back-to-top">
+      <i class="fas fa-angle-up"></i>
+    </div>
+
+    <!-- My Own JS -->
     <script src="assets/js/script.js"></script>
+
+    <!-- Swiper JS-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 50,
+        centeredSlides: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+      });
+    </script>
+
+    <!-- AOS JS-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+        once: true,
+        delay: 250,
+      });
+    </script>
   </body>
 </html>

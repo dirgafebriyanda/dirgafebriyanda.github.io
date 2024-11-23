@@ -26,7 +26,7 @@
   width: 100%;
   top: 0;
   z-index: 1000;
-  box-shadow: 3px 3px 5px rgb(36, 0, 0, 0.7);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
 }
 .navbar-logo a {
   font-family: "Playwrite DE LA", sans-serif;
@@ -252,14 +252,12 @@
   max-width: 220px;
   max-height: 80px;
   padding: 5px;
-  border: var(--main-color) solid 1px;
   border-radius: 8px;
   filter: grayscale(100%);
   box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.5);
   transition: transform 0.7s ease;
 }
 .skill-item:hover {
-  transform: translateY(-5px);
   filter: grayscale(0%);
 }
 .skill-item img {
@@ -278,6 +276,49 @@
   color: var(--other-color);
   font-weight: 400;
 }
+
+/* project */
+.project {
+  padding: 75px;
+}
+
+.p-text h4 {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  text-align: center;
+}
+
+.p-text h2 {
+  text-align: center;
+  font-size: var(--h2-font);
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 30px;
+}
+
+.project-set {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 kolom */
+  gap: 20px;
+}
+
+.project-item {
+  overflow: hidden;
+  border-radius: 8px;
+  height: auto;
+  box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.5);
+}
+
+.project-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  transition: transform 0.9s ease-in-out;
+}
+
+/* contact */
 .contact {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -366,6 +407,39 @@
 .end-text2 a:hover {
   color: white;
 }
+
+/* Tombol Back to Top */
+.back-to-top {
+  position: fixed; /* Perbaikan: Posisi fixed agar tetap berada di posisi yang sama saat scroll */
+  bottom: 8%;
+  right: 5%;
+  z-index: 9999;
+  opacity: 0; /* Menyembunyikan tombol saat halaman pertama kali dimuat */
+  visibility: hidden; /* Menyembunyikan tombol secara keseluruhan */
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Menambahkan transisi untuk animasi muncul */
+}
+
+/* Icon pada Tombol Back to Top */
+.back-to-top i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background: #00ff00;
+  color: var(--text-color);
+  border-radius: 50%;
+  font-size: 25px;
+  transition: color 0.7s ease, transform 0.7s ease;
+}
+
+.back-to-top i:hover {
+  background: transparent;
+  border: var(--main-color) solid 2px;
+  color: var(--main-color);
+  transform: translateY(-4px);
+}
+
 @media (max-width: 768px) {
   .navbar {
     justify-content: space-between;
@@ -423,6 +497,15 @@
     right: 2%;
   }
   .arrow i {
+    height: 35px;
+    width: 35px;
+    font-size: 22px;
+  }
+  .back-to-top {
+    bottom: 5%;
+    right: 2%;
+  }
+  .back-to-top i {
     height: 35px;
     width: 35px;
     font-size: 22px;
@@ -504,8 +587,29 @@
     font-weight: 400;
     font-size: 14px;
   }
-  .level {
-    font-size: 12px;
+  .project {
+    padding: 50px 20px; /* Mengurangi padding pada perangkat mobile */
+  }
+
+  .p-text h4 {
+    font-size: 18px; /* Ukuran font sedikit lebih kecil */
+  }
+
+  .p-text h2 {
+    font-size: 24px; /* Menurunkan ukuran font h2 untuk mobile */
+    margin-bottom: 20px; /* Mengurangi margin bawah */
+  }
+
+  .project-set {
+    grid-template-columns: 1fr; /* 1 kolom pada perangkat mobile */
+  }
+
+  .project-item {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Mengurangi bayangan agar lebih ringan */
+  }
+
+  .project-item img {
+    transition: transform 0.6s ease-in-out; /* Durasi transformasi lebih cepat pada mobile */
   }
   .contact {
     display: flex;
