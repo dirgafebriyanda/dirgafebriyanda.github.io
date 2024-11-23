@@ -592,12 +592,11 @@
   }
 
   .p-text h4 {
-    font-size: 18px; /* Ukuran font sedikit lebih kecil */
+    font-size: 1.4rem; /* Ukuran font sedikit lebih kecil */
   }
 
   .p-text h2 {
-    font-size: 24px; /* Menurunkan ukuran font h2 untuk mobile */
-    margin-bottom: 20px; /* Mengurangi margin bawah */
+    font-size: 1.6rem; /* Menurunkan ukuran font h2 untuk mobile */
   }
 
   .project-set {
@@ -629,11 +628,11 @@
     max-width: none;
   }
   .contact-box h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-align: center;
   }
   .contact-box h4 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: center;
   }
   .contact-box p {
