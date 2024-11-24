@@ -7,8 +7,8 @@
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
 }
+
 :root {
-  --h1-font: 4rem;
   --h2-font: 3.5rem;
   --p-font: 1.1rem;
   --bg-color: #ffffff;
@@ -16,11 +16,13 @@
   --main-color: #00ff00;
   --other-color: #727272;
 }
+
+/* navbar */
 .navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: #000000;
+  background: var(--text-color);
   height: 55px;
   position: fixed;
   width: 100%;
@@ -54,7 +56,7 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  background: #00ff00;
+  background: var(--main-color);
   height: 2px;
   transform: scaleX(0);
   transition: all 0.7s ease;
@@ -76,30 +78,35 @@
   width: 25px;
   height: 2px;
   border-radius: 5px;
-  background: #ffffff;
+  background: var(--bg-color);
   display: block;
   margin: 3px 0;
   transition: transform 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
 }
 .navbar-toggle.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 6px);
-  background: #00ff00;
+  background: var(--main-color);
 }
 .navbar-toggle.active span:nth-child(2) {
   opacity: 0;
 }
 .navbar-toggle.active span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -6px);
-  background: #00ff00;
+  background: var(--main-color);
 }
+
+/* home */
 .home {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 60px;
   height: 100vh;
-  background: #000000;
+  background: var(--text-color);
   color: var(--bg-color);
+  background-image: url(../img/c.jpg);
+  background-size: cover;
+  background-position: center;
 }
 .h-caption {
   margin: 0 0 50px 50px;
@@ -128,7 +135,7 @@
   justify-content: center;
   height: 40px;
   width: 40px;
-  background: #00ff00;
+  background: var(--main-color);
   color: var(--text-color);
   border-radius: 50%;
   font-size: 25px;
@@ -152,6 +159,8 @@
   color: var(--main-color);
   transform: translateY(-4px);
 }
+
+/* about */
 .about {
   display: flex;
   align-items: center;
@@ -214,13 +223,14 @@
 }
 .btn-about:hover {
   color: var(--bg-color);
-  background: #00ff00;
+  background: var(--main-color);
   transform: translateY(-4px);
   box-shadow: 3px 3px 6px rgb(0, 0, 0, 0.5);
 }
 .btn-about i {
   padding-left: 30px;
 }
+
 /* skills */
 .skills {
   padding: 75px;
@@ -245,7 +255,7 @@
   justify-content: center;
 }
 .skill-item {
-  background: #ffffff;
+  background: var(--bg-color);
   display: flex;
   align-items: center;
   flex-basis: calc(25% - 1.5rem);
@@ -281,7 +291,6 @@
 .project {
   padding: 75px;
 }
-
 .p-text h4 {
   font-size: 20px;
   font-weight: 600;
@@ -289,7 +298,6 @@
   letter-spacing: 0.7px;
   text-align: center;
 }
-
 .p-text h2 {
   text-align: center;
   font-size: var(--h2-font);
@@ -297,20 +305,17 @@
   color: var(--text-color);
   margin-bottom: 30px;
 }
-
 .project-set {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 3 kolom */
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
-
 .project-item {
   overflow: hidden;
   border-radius: 8px;
   height: auto;
   box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.5);
 }
-
 .project-item img {
   width: 100%;
   height: 100%;
@@ -323,7 +328,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
-  background: #000000;
+  background: var(--text-color);
   background-image: url(../img/c.jpg);
   background-size: cover;
   background-position: center;
@@ -360,7 +365,7 @@
 }
 .contact-box form button:hover {
   color: var(--text-color);
-  background: #00ff00;
+  background: var(--main-color);
   transform: translatey(-4px);
 }
 .contact-box form textarea {
@@ -383,9 +388,11 @@
 }
 .contact-box p {
   color: var(--other-color);
-  font-size: 16px;
+  font-size: var(--p-font);
   line-height: 1.6;
 }
+
+/* footer */
 .copyright {
   display: flex;
   align-items: center;
@@ -408,39 +415,37 @@
   color: white;
 }
 
-/* Tombol Back to Top */
+/*Back to Top */
 .back-to-top {
-  position: fixed; /* Perbaikan: Posisi fixed agar tetap berada di posisi yang sama saat scroll */
+  position: fixed;
   bottom: 8%;
   right: 5%;
   z-index: 9999;
-  opacity: 0; /* Menyembunyikan tombol saat halaman pertama kali dimuat */
-  visibility: hidden; /* Menyembunyikan tombol secara keseluruhan */
-  transition: opacity 0.3s ease, visibility 0.3s ease; /* Menambahkan transisi untuk animasi muncul */
+  opacity: 0; 
+  visibility: hidden; 
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
-
-/* Icon pada Tombol Back to Top */
 .back-to-top i {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   height: 40px;
   width: 40px;
-  background: #00ff00;
+  background: var(--main-color);
   color: var(--text-color);
   border-radius: 50%;
   font-size: 25px;
   transition: color 0.7s ease, transform 0.7s ease;
 }
-
 .back-to-top i:hover {
-  background: transparent;
+  background: rgba(0, 255, 0, 0.7);
   border: var(--main-color) solid 2px;
   color: var(--main-color);
   transform: translateY(-4px);
 }
 
 @media (max-width: 768px) {
+  /* navbar */
   .navbar {
     justify-content: space-between;
   }
@@ -454,7 +459,7 @@
     right: 0;
     width: 100%;
     height: 100vh;
-    background: #000000;
+    background: var(--text-color);
     pointer-events: none;
     transform: translateX(100%);
     transition: all 0.7s ease;
@@ -471,6 +476,8 @@
     display: flex;
     margin-right: 20px;
   }
+
+  /* home */
   .home {
     flex-direction: column;
     display: flex;
@@ -493,19 +500,10 @@
     max-height: 250px;
   }
   .arrow {
-    bottom: 3%;
-    right: 2%;
+    bottom: 4%;
+    right: 4%;
   }
   .arrow i {
-    height: 35px;
-    width: 35px;
-    font-size: 22px;
-  }
-  .back-to-top {
-    bottom: 3%;
-    right: 2%;
-  }
-  .back-to-top i {
     height: 35px;
     width: 35px;
     font-size: 22px;
@@ -515,50 +513,45 @@
     margin-top: 20px;
     padding-right: 15px;
   }
+
+  /* about */
   .about {
-    flex-direction: column; /* Change layout to column */
-    padding: 75px 40px 75px 40px; /* Adjust padding for smaller screens */
-    gap: 2rem; /* Reduce gap between elements */
+    flex-direction: column;
+    padding: 75px 40px 75px 40px;
+    gap: 2rem;
   }
-
   .about-img img {
-    max-width: 100%; /* Make image take full width */
+    max-width: 100%;
   }
-
   .about-text {
-    text-align: center; /* Center the text on smaller screens */
+    text-align: center;
   }
-
   .about-text h2 {
-    font-size: 1.6rem; /* Reduce font size for heading */
+    font-size: 1.6rem;
   }
-
   .about-text h4 {
-    font-size: 1.4rem; /* Reduce font size for subheading */
+    font-size: 1.4rem;
     margin-bottom: 10px;
   }
-
   .about-text p {
-    font-size: 16px; /* Adjust paragraph font size */
-    line-height: 1.6; /* Adjust line height for better readability */
-    margin-bottom: 15px; /* Reduce margin below paragraph */
-    text-align: start;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
   }
-
   .btn-about {
-    width: 100%; /* Make button full width */
-    padding: 15px; /* Adjust padding for smaller screens */
-    font-size: 18px; /* Make button text smaller */
-    margin-top: 20px; /* Add space above the button */
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    margin-top: 20px;
   }
-
   .btn-about i {
-    padding-left: 15px; /* Reduce padding for icon */
+    padding-left: 15px;
   }
 
-  /* skils */
+  /* skills */
   .skills {
-    padding: 75px 20px;
+    padding: 75px;
   }
   .s-text h2 {
     text-align: center;
@@ -587,29 +580,28 @@
     font-weight: 400;
     font-size: 14px;
   }
+
+  /* project */
   .project {
-    padding: 50px 20px; /* Mengurangi padding pada perangkat mobile */
+    padding: 75px;
   }
-
   .p-text h4 {
-    font-size: 1.4rem; /* Ukuran font sedikit lebih kecil */
+    font-size: 1.4rem;
   }
-
   .p-text h2 {
-    font-size: 1.6rem; /* Menurunkan ukuran font h2 untuk mobile */
+    font-size: 1.6rem; 
   }
-
   .project-set {
-    grid-template-columns: 1fr; /* 1 kolom pada perangkat mobile */
+    grid-template-columns: 1fr;
   }
-
   .project-item {
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Mengurangi bayangan agar lebih ringan */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  .project-item img {
+    transition: transform 0.6s ease-in-out; /
   }
 
-  .project-item img {
-    transition: transform 0.6s ease-in-out; /* Durasi transformasi lebih cepat pada mobile */
-  }
+  /* contact */
   .contact {
     display: flex;
     flex-direction: column;
@@ -637,6 +629,7 @@
   }
   .contact-box p {
     font-size: 14px;
+    text-align: justify;
   }
   .contact-box form input,
   .contact-box form textarea {
@@ -652,19 +645,30 @@
   .contact-box form textarea {
     min-height: 150px;
   }
+
+  /* footer */
   .copyright {
-    flex-direction: column; /* Stack items vertically on small screens */
-    padding: 15px 10px; /* Adjust padding for smaller screens */
-    gap: 15px; /* Reduce gap between elements */
+    flex-direction: column;
+    padding: 15px 10px; 
+    gap: 15px; 
   }
-
   .end-text1 p {
-    font-size: 14px; /* Slightly smaller font size for smaller screens */
-    text-align: center; /* Center the text for better readability on mobile */
+    font-size: 14px; 
+    text-align: center;
+  }
+  .end-text2 a {
+    font-size: 16px; 
+    text-align: center;
   }
 
-  .end-text2 a {
-    font-size: 16px; /* Adjust font size for smaller screens */
-    text-align: center; /* Center the link for better readability */
+  /* back to top */
+  .back-to-top {
+    bottom: 4%;
+    right: 4%;
+  }
+  .back-to-top i {
+    height: 35px;
+    width: 35px;
+    font-size: 22px;
   }
 }
