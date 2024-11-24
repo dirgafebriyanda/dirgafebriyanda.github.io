@@ -551,7 +551,7 @@
 
   /* skills */
   .skills {
-    padding: 75px;
+    padding: 75px 20px;
   }
   .s-text h2 {
     text-align: center;
@@ -583,7 +583,7 @@
 
   /* project */
   .project {
-    padding: 75px;
+    padding: 75px 20px;
   }
   .p-text h4 {
     font-size: 1.4rem;
