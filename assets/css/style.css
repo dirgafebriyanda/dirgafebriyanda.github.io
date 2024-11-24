@@ -438,7 +438,7 @@
   transition: color 0.7s ease, transform 0.7s ease;
 }
 .back-to-top i:hover {
-  background: rgba(0, 255, 0, 0.7);
+  background: transparent;
   border: var(--main-color) solid 2px;
   color: var(--main-color);
   transform: translateY(-4px);
