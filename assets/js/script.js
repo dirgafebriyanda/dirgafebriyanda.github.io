@@ -22,3 +22,12 @@ window.addEventListener("scroll", function () {
 backToTopButton.addEventListener("click", function () {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+const links = document.querySelectorAll(".navbar-list a");
+
+links.forEach((link) => {
+  link.addEventListener("click", function () {
+    links.forEach((l) => l.classList.remove("active"));
+    this.classList.add("active");
+  });
+});

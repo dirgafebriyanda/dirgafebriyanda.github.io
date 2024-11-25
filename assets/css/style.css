@@ -68,6 +68,12 @@
 .navbar-list a:hover::before {
   transform: scaleX(1);
 }
+.navbar-list a.active::before {
+  transform: scaleX(1);
+}
+.navbar-list a.active {
+  color: var(--main-color);
+}
 .navbar-toggle {
   display: none;
   flex-direction: column;
