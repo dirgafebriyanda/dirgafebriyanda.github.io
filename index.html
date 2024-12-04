@@ -99,6 +99,25 @@
           >
             <i class="fab fa-github"></i>
           </a>
+          <a
+            href="assets/cv-2024.pdf"
+            class="h-social-media"
+            onclick="return confirmDownload(event)"
+          >
+            <i class="fas fa-download"></i>
+          </a>
+          <script>
+            function confirmDownload(event) {
+              const userConfirmed = confirm(
+                "Are you sure you want to download the CV?"
+              );
+
+              if (!userConfirmed) {
+                event.preventDefault();
+              }
+              return userConfirmed;
+            }
+          </script>
         </div>
         <div class="j-img" data-aos="zoom-out">
           <img src="assets/img/homea.png" alt="Dirga Febriyanda" />
@@ -208,7 +227,8 @@
               class="project-item"
               data-aos="fade-right"
             >
-              <div class="swiper mySwiper">
+              <!-- Swiper pertama -->
+              <div class="swiper mySwiper1">
                 <div class="swiper-wrapper">
                   <img
                     class="swiper-slide"
@@ -232,13 +252,76 @@
                   />
                 </div>
               </div>
+
+              <!-- Swiper kedua -->
+              <div class="project-logo">
+                <div class="swiper mySwiper2">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="p-tools">
+                        <img
+                          src="assets/img/logo/laravel-logo.png"
+                          alt="Laravel"
+                        />
+                        <span class="p-tools-text">Laravel</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="p-tools">
+                        <img
+                          src="assets/img/logo/bootstrap-logo.png"
+                          alt="Bootstrap"
+                        />
+                        <span class="p-tools-text">Bootstrap</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="p-tools">
+                        <img src="assets/img/logo/mysql-logo.png" alt="MySQL" />
+                        <span class="p-tools-text">MySQL</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="p-tools">
+                        <img src="assets/img/logo/html-logo.png" alt="HTML" />
+                        <span class="p-tools-text">HTML</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="p-tools">
+                        <img src="assets/img/logo/css-logo.png" alt="Laravel" />
+                        <span class="p-tools-text">CSS</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="p-tools">
+                        <img
+                          src="assets/img/logo/js-logo.png"
+                          alt="JavaScipt"
+                        />
+                        <span class="p-tools-text">JavaScipt</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="p-tools">
+                        <img
+                          src="assets/img/logo/php-logo.png"
+                          alt="JavaScipt"
+                        />
+                        <span class="p-tools-text">PHP</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </a>
             <a
               href="https://github.com/dirgafebriyanda/E-Commerce"
               class="project-item"
               data-aos="fade-left"
             >
-              <div class="swiper mySwiper">
+              <!-- Swiper pertama -->
+              <div class="swiper mySwiper1">
                 <div class="swiper-wrapper">
                   <img
                     class="swiper-slide"
@@ -272,13 +355,76 @@
                   />
                 </div>
               </div>
+
+              <!-- Swiper kedua -->
+              <div class="project-logo">
+                <div class="swiper mySwiper2">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="p-tools">
+                        <img
+                          src="assets/img/logo/laravel-logo.png"
+                          alt="Laravel"
+                        />
+                        <span class="p-tools-text">Laravel</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="p-tools">
+                        <img
+                          src="assets/img/logo/bootstrap-logo.png"
+                          alt="Bootstrap"
+                        />
+                        <span class="p-tools-text">Bootstrap</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="p-tools">
+                        <img src="assets/img/logo/mysql-logo.png" alt="MySQL" />
+                        <span class="p-tools-text">MySQL</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="p-tools">
+                        <img src="assets/img/logo/html-logo.png" alt="HTML" />
+                        <span class="p-tools-text">HTML</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="p-tools">
+                        <img src="assets/img/logo/css-logo.png" alt="Laravel" />
+                        <span class="p-tools-text">CSS</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="p-tools">
+                        <img
+                          src="assets/img/logo/js-logo.png"
+                          alt="JavaScipt"
+                        />
+                        <span class="p-tools-text">JavaScipt</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="p-tools">
+                        <img
+                          src="assets/img/logo/php-logo.png"
+                          alt="JavaScipt"
+                        />
+                        <span class="p-tools-text">PHP</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </a>
             <a
               href="https://github.com/dirgafebriyanda/E-Vote"
               class="project-item"
               data-aos="fade-right"
             >
-              <div class="swiper mySwiper">
+              <!-- Swiper pertama -->
+              <div class="swiper mySwiper1">
                 <div class="swiper-wrapper">
                   <img
                     class="swiper-slide"
@@ -302,13 +448,76 @@
                   />
                 </div>
               </div>
+
+              <!-- Swiper kedua -->
+              <div class="project-logo">
+                <div class="swiper mySwiper2">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="p-tools">
+                        <img
+                          src="assets/img/logo/laravel-logo.png"
+                          alt="Laravel"
+                        />
+                        <span class="p-tools-text">Laravel</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="p-tools">
+                        <img
+                          src="assets/img/logo/bootstrap-logo.png"
+                          alt="Bootstrap"
+                        />
+                        <span class="p-tools-text">Bootstrap</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="p-tools">
+                        <img src="assets/img/logo/mysql-logo.png" alt="MySQL" />
+                        <span class="p-tools-text">MySQL</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="p-tools">
+                        <img src="assets/img/logo/html-logo.png" alt="HTML" />
+                        <span class="p-tools-text">HTML</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="p-tools">
+                        <img src="assets/img/logo/css-logo.png" alt="Laravel" />
+                        <span class="p-tools-text">CSS</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="p-tools">
+                        <img
+                          src="assets/img/logo/js-logo.png"
+                          alt="JavaScipt"
+                        />
+                        <span class="p-tools-text">JavaScipt</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="p-tools">
+                        <img
+                          src="assets/img/logo/php-logo.png"
+                          alt="JavaScipt"
+                        />
+                        <span class="p-tools-text">PHP</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </a>
             <a
               href="https://github.com/dirgafebriyanda/webistekita"
               class="project-item"
               data-aos="fade-left"
             >
-              <div class="swiper mySwiper">
+              <!-- Swiper pertama -->
+              <div class="swiper mySwiper1">
                 <div class="swiper-wrapper">
                   <img
                     class="swiper-slide"
@@ -340,6 +549,50 @@
                     src="assets/img/project/l6.png"
                     alt="img 3"
                   />
+                </div>
+              </div>
+
+              <!-- Swiper kedua -->
+              <div class="project-logo">
+                <div class="swiper mySwiper2">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="p-tools">
+                        <img src="assets/img/logo/vue-logo.png" alt="Vue" />
+                        <span class="p-tools-text">Vue</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="p-tools">
+                        <img
+                          src="assets/img/logo/bootstrap-logo.png"
+                          alt="Bootstrap"
+                        />
+                        <span class="p-tools-text">Bootstrap</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="p-tools">
+                        <img src="assets/img/logo/html-logo.png" alt="HTML" />
+                        <span class="p-tools-text">HTML</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="p-tools">
+                        <img src="assets/img/logo/css-logo.png" alt="Laravel" />
+                        <span class="p-tools-text">CSS</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="p-tools">
+                        <img
+                          src="assets/img/logo/js-logo.png"
+                          alt="JavaScipt"
+                        />
+                        <span class="p-tools-text">JavaScipt</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </a>
@@ -445,14 +698,24 @@
     <!-- Swiper JS-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 50,
-        centeredSlides: true,
+      const swiper1 = new Swiper(".mySwiper1", {
+        slidesPerView: 1,
+        loop: true,
+        spaceBetween: 10,
         autoplay: {
           delay: 5000,
           disableOnInteraction: false,
         },
+      });
+
+      const swiper2 = new Swiper(".mySwiper2", {
+        slidesPerView: 3,
+        spaceBetween: 10,
         loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
       });
     </script>
 
@@ -462,7 +725,6 @@
       AOS.init({
         duration: 1200,
         once: true,
-        delay: 250,
       });
     </script>
   </body>
